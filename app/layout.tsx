@@ -15,17 +15,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body>
+      <body className="flex flex-col min-h-screen">
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <Header />
           {children}
-      </ThemeProvider>
-        </body>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

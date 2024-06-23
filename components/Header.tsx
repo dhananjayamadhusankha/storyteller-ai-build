@@ -19,14 +19,10 @@ function Header() {
 
       <div className="flex space-x-2 fixed top-4 right-4">
         <Link href={"/"}>
-          <Button variant="outline" size="icon">
-            <FilePen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border border-purple-500 p-2 rounded-md cursor-pointer" />
-          </Button>
+          <FilePen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border border-purple-500 p-2 rounded-md cursor-pointer hover:bg-slate-100" />
         </Link>
         <Link href={"/stories"}>
-          <Button variant="outline" size="icon">
-            <BookOpen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border border-purple-500 p-2 rounded-md cursor-pointer" />
-          </Button>
+          <BookOpen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border border-purple-500 p-2 rounded-md cursor-pointer hover:bg-slate-100" />
         </Link>
         <ModeToggle />
       </div>
