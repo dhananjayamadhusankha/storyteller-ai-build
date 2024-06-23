@@ -1,5 +1,7 @@
 import { BookOpen, FilePen } from "lucide-react";
 import Link from "next/link";
+import { ModeToggle } from "./ModeToggle";
+import { Button } from "./ui/button";
 // md:-left-3 md:-top-0 md:-bottom-0 md:-right-3
 function Header() {
   return (
@@ -17,11 +19,16 @@ function Header() {
 
       <div className="flex space-x-2 fixed top-4 right-4">
         <Link href={"/"}>
-          <FilePen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border lg:border-2 border-purple-500 p-2 rounded-md cursor-pointer hover:opacity-50" />
+          <Button variant="outline" size="icon">
+            <FilePen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border border-purple-500 p-2 rounded-md cursor-pointer" />
+          </Button>
         </Link>
         <Link href={"/stories"}>
-          <BookOpen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border lg:border-2 border-purple-500 p-2 rounded-md cursor-pointer hover:opacity-50" />
+          <Button variant="outline" size="icon">
+            <BookOpen className="w-8 h-8 mx-auto lg:w-10 lg:h-10 text-purple-500 border border-purple-500 p-2 rounded-md cursor-pointer" />
+          </Button>
         </Link>
+        <ModeToggle />
       </div>
     </header>
   );
